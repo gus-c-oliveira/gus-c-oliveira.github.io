@@ -1,7 +1,8 @@
 .section-icon {
-  width: 5rem;
-  height: 5rem;
-  margin-right: 2rem;
+  width: var(--section-icon-width);
+  height: var(--section-icon-height);
+  margin-right: var(--section-icon-margin-right);
+  margin-left: var(--section-icon-margin-left);
 
   background-color: var(--color-white);
 
@@ -9,8 +10,8 @@
 
   &__icon {
     @include absolute-center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: calc(var(--section-icon-width) / 2);
+    height: calc(var(--section-icon-height) / 2);
 
     fill: var(--color-primary);
   }

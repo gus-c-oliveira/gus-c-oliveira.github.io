@@ -12,7 +12,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 10rem 3rem;
+  padding: 5rem var(--header-padding-horizontal) var(--header-padding-bottom);
 
   color: var(--color-primary);
   font-weight: 300;
@@ -65,4 +65,9 @@
 
     fill: var(--color-primary);
   }
+}
+
+section {
+  margin: var(--section-margin-vertical) 0;
+  padding-right: var(--section-padding-right);
 }
