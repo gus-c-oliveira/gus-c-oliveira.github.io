@@ -103,3 +103,14 @@ body {
 section {
   margin: var(--section-margin-vertical) 0;
   padding-right: var(--section-padding-right); }
+
+.experience {
+  display: flex; }
+  .experience__content {
+    display: flex;
+    flex-direction: column; }
+  .experience__header {
+    flex: 0 0 var(--section-icon-height);
+    color: var(--color-primary);
+    font-size: 3rem;
+    line-height: var(--section-icon-height); }
