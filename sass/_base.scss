@@ -1,0 +1,30 @@
+// BROWSER RESET
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// GLOBAL
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%; // 1rem = 10px => 10px / 16px = 62.5%
+}
+
+body {
+  // Adjustment to height due to margin collapsing
+  min-height: calc(100vh - var(--container-margin-vertical));
+
+  color: var(--color-gray-dark-2);
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+
+  background: var(--color-black) linear-gradient(to right, var(--color-primary-dark), var(--color-primary), var(--color-primary-light)) repeat scroll 0% 0%;
+}
