@@ -8,3 +8,30 @@
 
   box-shadow: var(--shadow-dark);
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem 3rem;
+
+  color: var(--color-primary);
+  font-weight: 300;
+  line-height: 1.4;
+
+  background-color: var(--color-white);
+
+  &__name {
+    font-size: 6rem;
+  }
+
+  &__name--bold {
+    display: block;
+
+    font-weight: 600;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

@@ -26,6 +26,23 @@ body {
   background-color: var(--color-gray-light-1);
   box-shadow: var(--shadow-dark); }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem 3rem;
+  color: var(--color-primary);
+  font-weight: 300;
+  line-height: 1.4;
+  background-color: var(--color-white); }
+  .header__name {
+    font-size: 6rem; }
+  .header__name--bold {
+    display: block;
+    font-weight: 600; }
+  .header__icon {
+    width: 1.5rem;
+    height: 1.5rem; }
+
 :root {
   --color-primary: #203a43;
   --color-primary-dark: #0f2027;
