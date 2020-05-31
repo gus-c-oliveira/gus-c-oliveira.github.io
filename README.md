@@ -1,2 +1,3 @@
-# gus-c-oliveira.github.io
-Personal Website
+# Personal Website
+
+Built with HTML and Sass!
