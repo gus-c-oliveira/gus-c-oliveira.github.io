@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  // Adjustment to height due to margin collapsing
+  min-height: calc(100vh - var(--container-margin-vertical));
 
   color: var(--color-gray-dark-2);
   font-weight: 400;
