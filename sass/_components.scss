@@ -1,0 +1,17 @@
+.section-icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+
+  background-color: var(--color-white);
+
+  border-radius: 50%;
+
+  &__icon {
+    @include absolute-center;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    fill: var(--color-primary);
+  }
+}
