@@ -16,3 +16,12 @@
     fill: var(--color-primary);
   }
 }
+
+.section-header {
+  flex: 0 0 var(--section-icon-height);
+
+  color: var(--color-primary);
+  font-size: 3rem;
+
+  line-height: var(--section-icon-height);
+}

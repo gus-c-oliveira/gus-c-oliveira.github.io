@@ -58,6 +58,12 @@ body {
     height: calc(var(--section-icon-height) / 2);
     fill: var(--color-primary); }
 
+.section-header {
+  flex: 0 0 var(--section-icon-height);
+  color: var(--color-primary);
+  font-size: 3rem;
+  line-height: var(--section-icon-height); }
+
 .container {
   max-width: 120rem;
   height: 50rem;
@@ -109,8 +115,3 @@ section {
   .experience__content {
     display: flex;
     flex-direction: column; }
-  .experience__header {
-    flex: 0 0 var(--section-icon-height);
-    color: var(--color-primary);
-    font-size: 3rem;
-    line-height: var(--section-icon-height); }
