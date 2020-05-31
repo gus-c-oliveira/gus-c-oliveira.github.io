@@ -11,6 +11,14 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+body {
+  min-height: 100vh;
+  color: var(--color-gray-dark-2);
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: var(--color-black) linear-gradient(to right, var(--color-primary-dark), var(--color-primary), var(--color-primary-light)) repeat scroll 0% 0%; }
+
 :root {
   --color-primary: #203a43;
   --color-primary-dark: #0f2027;
