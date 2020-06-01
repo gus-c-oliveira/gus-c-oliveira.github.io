@@ -1,2 +1,6 @@
 # dependencies
 node_modules
+
+# intermediate build style files
+css/style.comp.css
+css/style.prefix.css
