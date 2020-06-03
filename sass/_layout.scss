@@ -29,8 +29,7 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flex-vertical;
     justify-content: center;
 
     font-size: 1.4rem;
@@ -66,17 +65,19 @@
 }
 
 section {
+  display: flex;
   min-height: 1rem;
   margin: var(--section-margin-vertical) 0;
   padding-right: var(--section-padding-right);
+
+  &:last-of-type {
+    padding-bottom: var(--section-margin-vertical);
+  }
 }
 
 .experience {
-  display: flex;
-
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flex-vertical;
   }
 
   &__item {
@@ -105,5 +106,11 @@ section {
   &__description a:visited {
     color: inherit;
     text-decoration: none;
+  }
+}
+
+.skills {
+  &__content {
+    @include flex-vertical;
   }
 }
