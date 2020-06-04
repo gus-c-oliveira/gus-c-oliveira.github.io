@@ -138,3 +138,39 @@ section {
     font-size: 1.6rem;
   }
 }
+
+.education {
+  &__content {
+    @include flex-vertical;
+  }
+
+  &__item {
+    margin-bottom: 1.5rem;
+  }
+
+  &__level {
+    color: var(--color-primary-light);
+    font-size: 2rem;
+  }
+
+  &__date {
+    display: block;
+
+    color: var(--color-primary-dark);
+    font-size: 1.6rem;
+  }
+
+  &__extra {
+    font-size: 1.6rem;
+  }
+}
+
+.other {
+  &__content {
+    @include flex-vertical;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+  }
+}
