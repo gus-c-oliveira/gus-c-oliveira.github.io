@@ -164,3 +164,13 @@ section {
     font-size: 1.6rem;
   }
 }
+
+.other {
+  &__content {
+    @include flex-vertical;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+  }
+}
