@@ -8,16 +8,20 @@
   --color-black: #000;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-header-icons: 0 0 1rem var(--color-black);
 
   --container-margin-vertical: 7rem;
+  
+  --header-icon-container-width: 3.5rem;
+  --header-icon-container-height: var(--header-icon-container-width);
+
+  --header-padding-horizontal: calc(var(--section-icon-width) + var(--section-icon-margin-right) + var(--section-icon-margin-left));
+  --header-padding-bottom: 3rem;
 
   --section-icon-width: 5rem;
   --section-icon-height: var(--section-icon-width);
   --section-icon-margin-right: 2rem;
   --section-icon-margin-left: 5rem;
-
-  --header-padding-horizontal: calc(var(--section-icon-width) + var(--section-icon-margin-right) + var(--section-icon-margin-left));
-  --header-padding-bottom: 3rem;
 
   --section-margin-vertical: 3rem;
   --section-padding-right: var(--header-padding-horizontal);

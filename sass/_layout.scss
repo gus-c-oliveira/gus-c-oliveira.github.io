@@ -9,30 +9,23 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  @include flex-vertical;
   padding: 5rem var(--header-padding-horizontal) var(--header-padding-bottom);
 
-  font-weight: 300;
-  line-height: 1.3;
+  text-align: center;
 
   background-color: var(--color-white);
 
   &__name {
+    font-weight: 600;
     font-size: 6rem;
   }
 
-  &__name--bold {
-    display: block;
-
-    font-weight: 600;
-  }
-
   &__list {
-    @include flex-vertical;
-    justify-content: center;
-
-    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
 
     list-style: none;
   }
@@ -40,27 +33,35 @@
   &__info {
     display: flex;
     align-items: center;
-    padding: 0.5rem 0;
+    justify-content: center;
+    width: var(--header-icon-container-width);
+    height: var(--header-icon-container-height);
+
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all 0.2s;
+  }
+
+  &__info:hover {
+    animation: pulsate 1s infinite;
+  }
+
+  &__info:hover &__icon {
+    fill: var(--color-primary-dark);
   }
 
   &__data {
-    flex: 1;
-
-    text-align: right;
-  }
-
-  &__data:link,
-  &__data:visited {
-    color: inherit;
-    text-decoration: none;
+    display: flex;
   }
 
   &__icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 1.5rem;
+    width: calc(var(--header-icon-container-width) - 1rem);
+    height: calc(var(--header-icon-container-height) - 1rem);
 
-    fill: var(--color-primary);
+    transition: all 0.2s;
+
+    fill: var(--color-primary-light);
   }
 }
 
