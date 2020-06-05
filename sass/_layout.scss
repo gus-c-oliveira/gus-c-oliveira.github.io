@@ -30,7 +30,7 @@
     list-style: none;
   }
 
-  &__info {
+  &__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,15 +43,15 @@
     transition: all 0.2s;
   }
 
-  &__info:hover {
+  &__item:hover {
     animation: pulsate 1s infinite;
   }
 
-  &__info:hover &__icon {
+  &__item:hover &__icon {
     fill: var(--color-primary-dark);
   }
 
-  &__data {
+  &__link {
     display: flex;
   }
 
