@@ -91,11 +91,13 @@ section {
 
   &__item span {
     display: block;
+
+    font-weight: 600;
   }
 
   &__title,
   &__date {
-    color: var(--color-primary-light);
+    color: var(--color-primary-dark);
     font-size: 2rem;
   }
 
