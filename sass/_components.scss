@@ -25,3 +25,65 @@
 
   line-height: var(--section-icon-height);
 }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.3s;
+
+  &__content {
+    @include absolute-center;
+    @include flex-vertical;
+    width: max-content;
+    max-height: 100vh;
+    padding: 1rem;
+
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+
+    transform: translate(-50%, -50%) scale(0.25);
+
+    opacity: 0;
+
+    transition: all 0.4s 0.2s;
+  }
+
+  a {
+    position: absolute;
+    right: 1.7rem;
+
+    color: var(--color-black);
+    font-size: 2rem;
+    text-decoration: none;
+
+    background-color: var(--color-white);
+  }
+
+  &__img {
+    width: auto;
+    height: 80vh;
+
+    border-radius: 10px;
+  }
+
+  // OPEN STATES
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}

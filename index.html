@@ -43,7 +43,7 @@
         </ul>
       </header>
       <main>
-        <section class="experience">
+        <section class="experience" id="experience">
           <div class="section-icon">
             <svg class="section-icon__icon">
               <use xlink:href="img/sprites.svg#icon-rocket"></use>
@@ -56,7 +56,7 @@
               <span class="experience__date">2019 - Present</span>
               <p class="experience__description">
                 Front-end development using Angular, React, TypeScript, JavaScript, HTML & CSS. Examples of implemented tasks:<br><br>
-                Generic Form and Table Components<br>
+                <a href="#popup" id="form-link">Generic Form</a> and Table Components<br>
                 These components allow developers on the team to create forms and tables by simply writing a single configuration object without having to worry about template implementation, speeding up the development process and encouraging code reuse. They have automatic layout capabilities and allow for a variety of standard and personalized inputs (form) or cell formats (table). Communication with parent component occurs via outputs that inform current form state (form) or actions performed (table).<br><br>
                 Cash Flow Tool<br>
                 A tool that enables users to visualize the cash flow in their portfolio using a history table and a graph connected to a summary card.<br><br>
@@ -158,6 +158,13 @@
           </div>
         </section>
       </main>
+    </div>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <a href="#experience">X</a>
+        <img class="popup__img" src="img/gor-form-demo.gif">
+      </div>
     </div>
   </body>
 </html>
