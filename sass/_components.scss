@@ -80,6 +80,10 @@
     border-radius: 10px;
   }
 
+  &__warning {
+    display: none;
+  }
+
   // OPEN STATES
   &:target {
     visibility: visible;
@@ -89,5 +93,27 @@
   &:target &__content {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+  }
+}
+
+// 1200px
+@media only screen and (max-width: 75em) {
+  #popup-datepicker .popup {
+    &__content {
+      width: 100%;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__warning {
+      display: block;
+      padding: 3rem;
+
+      font-size: 2rem;
+
+      background-color: var(--color-white);
+    }
   }
 }

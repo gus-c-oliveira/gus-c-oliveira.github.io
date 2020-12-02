@@ -19,6 +19,18 @@
   &__name {
     font-weight: 600;
     font-size: 6rem;
+
+    // 500px
+    @media only screen and (max-width: 31.25em) {
+      font-size: 5rem;
+    }
+
+    // 400px
+    @media only screen and (max-width: 25em) {
+      margin-bottom: 1rem;
+
+      font-size: 3rem;
+    }
   }
 
   &__list {
@@ -28,6 +40,16 @@
     margin: 0 auto;
 
     list-style: none;
+
+    // 1000px
+    @media only screen and (max-width: 62.5em) {
+      width: 100%;
+    }
+
+    // 500px
+    @media only screen and (max-width: 31.25em) {
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -138,6 +160,11 @@ section {
   &__item {
     flex: 0 0 45%;
     margin-bottom: 1rem;
+
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      flex: 0 0 100%;
+    }
   }
 
   &__label,
@@ -157,6 +184,7 @@ section {
 
   &__level {
     color: var(--color-primary-light);
+    font-weight: 600;
     font-size: 2rem;
   }
 
