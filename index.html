@@ -56,12 +56,13 @@
               <span class="experience__date">2019 - Present</span>
               <p class="experience__description">
                 Front-end development using Angular, React, TypeScript, JavaScript, HTML & CSS. Examples of implemented tasks:<br><br>
-                <a href="#popup" id="form-link">Generic Form</a> and Table Components<br>
-                These components allow developers on the team to create forms and tables by simply writing a single configuration object without having to worry about template implementation, speeding up the development process and encouraging code reuse. They have automatic layout capabilities and allow for a variety of standard and personalized inputs (form) or cell formats (table). Communication with parent component occurs via outputs that inform current form state (form) or actions performed (table).<br><br>
-                Cash Flow Tool<br>
-                A tool that enables users to visualize the cash flow in their portfolio using a history table and a graph connected to a summary card.<br><br>
-                Report and Allocation Refactors<br>
-                The Allocation refactor updated components in the B2B and B2C dashboards and the wallet screen to provide a single source of truth for information about asset allocation in a user's portfolio, reducing bugs, conflicting data and redundant code.
+                <b><a href="#popup-form" class="popup-link">Generic Form</a> and <a href="#popup-datepicker" class="popup-link">Range Datepicker</a> Components<br></b>
+                The Generic Form allow developers on the team to create forms by simply writing a single configuration object without having to worry about template implementation, speeding up the development process and encouraging code reuse. It has automatic layout capabilities and allows for a variety of standard and personalized inputs.<br><br>
+                Range Datepicker is an adaptation of the ngx-daterangepicker-material library. It allows users to select a custom range of dates using calendars or to select a pre-defined range based on default options or relevant market events.<br><br>
+                <b>Portfolio Comparator<br></b>
+                A tool that allows financial advisors to compare two investment portfolios across different metrics, using tables and graphs to display data. Users can also print the report to a PDF file.<br><br>
+                <b>Report and Allocation Refactors<br></b>
+                The Allocation refactor updated components in the B2B and B2C dashboards and the wallet screen to provide a single source of truth for information about asset allocation in a user's portfolio, reducing bugs, conflicting data and redundant code.<br><br>
                 The Report Tool (Redux) Store Module refactor allowed 48 HTTP requests to be substituted by a single one, reducing module size in around 750 lines of code and simplifying code structure.
               </p>
             </div>
@@ -160,10 +161,17 @@
       </main>
     </div>
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup-form">
       <div class="popup__content">
-        <a href="#experience">X</a>
+        <a href="#experience" class="popup__close">X</a>
         <img class="popup__img" src="img/gor-form-demo.gif">
+      </div>
+    </div>
+
+    <div class="popup" id="popup-datepicker">
+      <div class="popup__content">
+        <a href="#experience" class="popup__close popup__close--transparent">X</a>
+        <img class="popup__img" src="img/range-datepicker-demo.gif">
       </div>
     </div>
   </body>

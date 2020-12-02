@@ -58,7 +58,7 @@
     transition: all 0.4s 0.2s;
   }
 
-  a {
+  &__close {
     position: absolute;
     right: 1.7rem;
 
@@ -67,6 +67,10 @@
     text-decoration: none;
 
     background-color: var(--color-white);
+  }
+
+  &__close--transparent {
+    background-color: transparent;
   }
 
   &__img {
