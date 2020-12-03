@@ -213,27 +213,36 @@ section {
 .education {
   &__content {
     @include flex-vertical;
+    flex: 1;
   }
 
   &__item {
-    margin-bottom: 1.5rem;
+    margin: 1rem 0;
+    padding: 1rem 2rem 1rem 1rem;
+
+    color: var(--color-white);
+    font-size: 1.6rem;
+
+    background-color: var(--color-primary);
+
+    clip-path: polygon(100% 0%, calc(100% - 1.5rem) 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+
+    // 800px
+    @media only screen and (max-width: 50em) {
+      clip-path: none;
+    }
   }
 
   &__level {
-    color: var(--color-primary-light);
-    font-weight: 600;
-    font-size: 2rem;
-  }
-
-  &__date {
     display: block;
 
-    color: var(--color-primary-dark);
-    font-size: 1.6rem;
-  }
+    font-weight: 600;
+    font-size: 2rem;
 
-  &__extra {
-    font-size: 1.6rem;
+    // 1000px
+    @media only screen and (max-width: 62.5em) {
+      font-size: 1.6rem;
+    }
   }
 }
 
