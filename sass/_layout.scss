@@ -246,7 +246,7 @@ section {
   }
 }
 
-.other {
+.courses {
   &__content {
     @include flex-vertical;
   }
@@ -260,5 +260,16 @@ section {
     background-color: var(--color-white);
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &__item:hover {
+    transform: scale(1.03);
+  }
+
+  &__link {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    cursor: pointer;
   }
 }
