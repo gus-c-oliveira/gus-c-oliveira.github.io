@@ -105,7 +105,7 @@ section {
 
   &__item {
     margin: 2rem 0;
-    padding: 1rem;
+    padding: 2rem;
 
     font-size: 1.6rem;
 
@@ -247,12 +247,30 @@ section {
 }
 
 .courses {
+  // 600px
+  @media only screen and (max-width: 37.5em) {
+    .section-header {
+      width: min-content;
+    }
+  }
+
   &__content {
     @include flex-vertical;
   }
 
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      justify-content: flex-start;
+    }
+  }
+
   &__item {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1rem;
     padding: 1rem 2rem;
 
     font-size: 1.6rem;
