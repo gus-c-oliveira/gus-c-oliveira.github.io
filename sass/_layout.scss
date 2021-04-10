@@ -10,45 +10,46 @@
 
 .header {
   @include flex-vertical;
-  padding: 5rem var(--header-padding-horizontal) var(--header-padding-bottom);
 
+  height: 100vh;
+
+  color: var(--color-white);
   text-align: center;
 
-  background-color: var(--color-white);
+  background-color: var(--color-primary-dark);
+
+  animation: clipHeader 2s ease-in-out;
+  animation-fill-mode: forwards;
 
   &__name {
+    margin-top: 30vh;
+
     font-weight: 600;
     font-size: 6rem;
 
-    // 500px
-    @media only screen and (max-width: 31.25em) {
-      font-size: 5rem;
-    }
+    opacity: 0;
 
-    // 400px
-    @media only screen and (max-width: 25em) {
-      margin-bottom: 1rem;
-
-      font-size: 3rem;
-    }
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
   }
 
   &__list {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
-    margin: 0 auto;
+    margin: 2vh auto;
 
     list-style: none;
+    opacity: 0;
+
+    animation: slideInBottom 1s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 
     // 1000px
     @media only screen and (max-width: 62.5em) {
-      width: 100%;
-    }
-
-    // 500px
-    @media only screen and (max-width: 31.25em) {
-      justify-content: space-between;
+      width: 90%;
     }
   }
 
@@ -66,11 +67,7 @@
   }
 
   &__item:hover {
-    animation: pulsate 1s infinite;
-  }
-
-  &__item:hover &__icon {
-    fill: var(--color-primary-dark);
+    animation: pulsate 1.5s infinite;
   }
 
   &__link {
@@ -83,8 +80,29 @@
 
     transition: all 0.2s;
 
-    fill: var(--color-primary-light);
+    fill: var(--color-white);
   }
+}
+
+.header::after {
+  position: absolute;
+  bottom: -2px;
+  z-index: -100;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--color-primary-light);
+
+  opacity: 0;
+
+  animation: fadeIn 2s ease-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+
+  content: '';
+
+  clip-path: polygon(0 99%, 100% 74%, 100% 75%, 0 100%);
 }
 
 section {
@@ -92,6 +110,10 @@ section {
   min-height: 1rem;
   margin: var(--section-margin-vertical) 0;
   padding-right: var(--section-padding-right);
+
+  &:first-of-type {
+    padding-top: var(--section-margin-vertical);
+  }
 
   &:last-of-type {
     padding-bottom: var(--section-margin-vertical);
@@ -198,7 +220,6 @@ section {
 
   &__item {
     display: block;
-    width: max-content;
     margin: 1rem;
     padding: 0.5rem 2rem;
 
