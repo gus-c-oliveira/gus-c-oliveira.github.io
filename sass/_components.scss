@@ -46,6 +46,8 @@
     position: absolute;
     right: 1.7rem;
 
+    display: none;
+
     color: var(--color-black);
     font-size: 2rem;
     text-decoration: none;
@@ -84,7 +86,8 @@
     opacity: 1;
   }
 
-  &:target &__img {
+  &:target &__img,
+  &:target &__close {
     display: block;
   }
 }
