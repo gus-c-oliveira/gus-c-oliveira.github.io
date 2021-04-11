@@ -238,37 +238,86 @@ section {
 }
 
 .education {
-  &__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+
+  color: var(--color-white);
+
+  // 950px
+  @media only screen and (max-width: 59.375em) {
     @include flex-vertical;
-    flex: 1;
+  }
+
+  &__header {
+    grid-column: span 3;
+  }
+
+  span {
+    display: block;
+
+    text-align: center;
   }
 
   &__item {
-    margin: 1rem 0;
-    padding: 1rem 2rem 1rem 1rem;
+    @include flex-vertical;
+    width: 250px;
+    height: 255px;
+    margin: 0 1rem 3rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
 
-    color: var(--color-white);
     font-size: 1.6rem;
 
-    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
 
-    clip-path: polygon(100% 0%, calc(100% - 1.5rem) 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    // 950px
+    @media only screen and (max-width: 59.375em) {
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
 
-    // 800px
-    @media only screen and (max-width: 50em) {
-      clip-path: none;
+    // 600px
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
     }
   }
 
+  &__item:hover {
+    box-shadow: var(--shadow-education-cards);
+    transform: translate(-1rem, -1rem);
+  }
+
   &__level {
-    display: block;
+    padding: 1rem 0;
 
-    font-weight: 600;
-    font-size: 2rem;
+    background: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
 
-    // 1000px
-    @media only screen and (max-width: 62.5em) {
-      font-size: 1.6rem;
+    // 950px
+    @media only screen and (max-width: 59.375em) {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      padding: 1rem 3rem;
+    }
+  }
+
+  &__detail {
+    display: grid;
+    place-items: center;
+
+    flex: 1;
+
+    padding-top: 3rem;
+
+    // 950px
+    @media only screen and (max-width: 59.375em) {
+      width: 250px;
+      padding: 1rem 2rem;
     }
   }
 }
