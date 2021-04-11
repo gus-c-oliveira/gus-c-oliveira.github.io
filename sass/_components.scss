@@ -26,6 +26,8 @@
   &__content {
     @include absolute-center;
     @include flex-vertical;
+    z-index: -9999;
+
     width: max-content;
     max-height: 100vh;
     padding: 1rem;
@@ -75,6 +77,8 @@
   }
 
   &:target &__content {
+    z-index: 9999;
+
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
