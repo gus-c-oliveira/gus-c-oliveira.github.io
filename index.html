@@ -41,50 +41,44 @@
         </li>
       </ul>
     </header>
+    <main>
+      <section class="experience" id="experience">
+        <h1 class="section-header">Experience</h1>
+        <div class="experience__item">
+          <span class="experience__title">Software Developer | Gorila Invest</span>
+          <span class="experience__date">2019 - Present</span>
+          <p class="experience__description">
+            Front-end development with a multidisciplinary team to deliver tools for financial advisors. Implementation of user interfaces with reusable modules/components, code review and maintenance, billing and report/data comparison tools. Examples of implemented tasks:<br><br>
+            <a href="#popup-form" class="popup-link">Generic Form Component</a><br>
+            The Generic Form allows developers on the team to create forms by simply writing a single configuration object without having to worry about template implementation, speeding up the development process and encouraging code reuse. It has automatic layout capabilities and allows for a variety of standard and personalized inputs.<br><br>
+            <a href="#popup-datepicker" class="popup-link">Range Datepicker Component</a><br>
+            Range Datepicker is an adaptation of the ngx-daterangepicker-material library. It allows users to select a custom range of dates using calendars or to select a pre-defined range based on default options or relevant market events.<br><br>
+            Portfolio Comparator<br>
+            A tool that allows financial advisors to compare two investment portfolios across different metrics, using tables and graphs to display data. Users can also print the report to a PDF file.<br><br>
+            Report and Allocation Refactors<br>
+            The Allocation refactor updated components in the B2B and B2C dashboards and the wallet screen to provide a single source of truth for information about asset allocation in a user's portfolio, reducing bugs, conflicting data and redundant code.<br><br>
+            The Report Tool (Redux) Store Module refactor allowed 48 HTTP requests to be substituted by a single one, reducing module size in around 750 lines of code and simplifying code structure.
+          </p>
+        </div>
+        <div class="experience__item">
+          <span class="experience__title">Graduate Research Assistant | Lab. of Biocybernetics and Rehabilitation Engineering (LABCIBER)</span>
+          <span class="experience__date">2017 – 2019</span>
+          <p class="experience__description">
+            (Patent Pending) Development of a hardware/software system for the quantitative evaluation of spasticity.<br>
+            Development of a desktop Java application for a wireless system to monitor plantar pressure.<br>
+            Published <a href="https://www.scitepress.org/PersonProfile.aspx?PersonAccountID=prAd5c59yJU=&t=1" target="_blank">3 scientific papers</a> on instrumentation/software in biomedical applications.
+          </p>
+        </div>
+        <div class="experience__item">
+          <span class="experience__title">Undergraduate Research Assistant | People Aware Computing Lab</span>
+          <span class="experience__date">2016</span>
+          <p class="experience__description">
+            Summer internship. Participated in the initial development phase of a mobile system using near-infrared spectroscopy for measurement of human physiological parameters and modeling human behavior using signal processing and machine learning.
+          </p>
+        </div>
+      </section>
+    </main>
     <div class="container hidden">
-      <main>
-        <section class="experience" id="experience">
-          <div class="section-icon">
-            <svg class="section-icon__icon">
-              <use xlink:href="img/sprites.svg#icon-rocket"></use>
-            </svg>
-          </div>
-          <div class="experience__content">
-            <h1 class="section-header">Experience</h1>
-            <div class="experience__item">
-              <span class="experience__title">Software Developer | Gorila Invest</span>
-              <span class="experience__date">2019 - Present</span>
-              <p class="experience__description">
-                Front-end development with a multidisciplinary team to deliver tools for financial advisors. Implementation of user interfaces with reusable modules/components, code review and maintenance, billing and report/data comparison tools. Examples of implemented tasks:<br><br>
-                <b><a href="#popup-form" class="popup-link">Generic Form</a> and <a href="#popup-datepicker" class="popup-link">Range Datepicker</a> Components<br></b>
-                The Generic Form allow developers on the team to create forms by simply writing a single configuration object without having to worry about template implementation, speeding up the development process and encouraging code reuse. It has automatic layout capabilities and allows for a variety of standard and personalized inputs.<br><br>
-                Range Datepicker is an adaptation of the ngx-daterangepicker-material library. It allows users to select a custom range of dates using calendars or to select a pre-defined range based on default options or relevant market events.<br><br>
-                <b>Portfolio Comparator<br></b>
-                A tool that allows financial advisors to compare two investment portfolios across different metrics, using tables and graphs to display data. Users can also print the report to a PDF file.<br><br>
-                <b>Report and Allocation Refactors<br></b>
-                The Allocation refactor updated components in the B2B and B2C dashboards and the wallet screen to provide a single source of truth for information about asset allocation in a user's portfolio, reducing bugs, conflicting data and redundant code.<br><br>
-                The Report Tool (Redux) Store Module refactor allowed 48 HTTP requests to be substituted by a single one, reducing module size in around 750 lines of code and simplifying code structure.
-              </p>
-            </div>
-            <div class="experience__item">
-              <span class="experience__title">Graduate Research Assistant | Lab. of Biocybernetics and Rehabilitation Engineering (LABCIBER)</span>
-              <span class="experience__date">2017 – 2019</span>
-              <p class="experience__description">
-                (Patent Pending) Development of a hardware/software system for the quantitative evaluation of spasticity.<br>
-                Development of a desktop Java application for a wireless system to monitor plantar pressure.<br>
-                Published <a href="https://www.scitepress.org/PersonProfile.aspx?PersonAccountID=prAd5c59yJU=&t=1" target="_blank">3 scientific papers</a> on instrumentation/software in biomedical applications.
-              </p>
-            </div>
-            <div class="experience__item">
-              <span class="experience__title">Undergraduate Research Assistant | People Aware Computing Lab</span>
-              <span class="experience__date">2016</span>
-              <p class="experience__description">
-                Summer internship. Participated in the initial development phase of a mobile system using near-infrared spectroscopy for measurement of human physiological parameters and modeling human behavior using signal processing and machine learning.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section class="skills">
           <div class="section-icon">
             <svg class="section-icon__icon">
@@ -257,24 +251,21 @@
             </div>
           </div>
         </section>
-      </main>
     </div>
 
-    <!-- TEMP HIDDEN UNTIL NEW LAYOUT IS IMPLEMENTED!
-    <div class="popup hidden" id="popup-form">
+    <div class="popup" id="popup-form">
       <div class="popup__content">
         <a href="#experience" class="popup__close">X</a>
         <img class="popup__img" src="img/gor-form-demo.gif">
       </div>
     </div>
 
-    <div class="popup hidden" id="popup-datepicker">
+    <div class="popup" id="popup-datepicker">
       <div class="popup__content">
         <a href="#experience" class="popup__close popup__close--transparent">X</a>
         <img class="popup__img" src="img/range-datepicker-demo.gif">
         <span class="popup__warning">Sorry, demo available only for larger screens (above 1200px)!</span>
       </div>
     </div>
-     -->
   </body>
 </html>
