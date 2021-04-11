@@ -58,6 +58,7 @@
   }
 
   &__img {
+    display: none;
     width: auto;
     height: 80vh;
 
@@ -81,6 +82,10 @@
 
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
+  }
+
+  &:target &__img {
+    display: block;
   }
 }
 
